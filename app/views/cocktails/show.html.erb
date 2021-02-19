@@ -1,0 +1,4 @@
+<%= @cocktail.name %>
+<% @cocktail.doses.each do |dose| %>
+  <%= dose.ingredient.name %><%= dose.description %>
+<% end %>

@@ -2,5 +2,7 @@ index.html.erb
 <ul>
   <% @cocktails.each do |cocktail| %>
     <li><%= cocktail.name %></li>
+    <%= link_to "see the cocktail", cocktail_path(cocktail.id) %>
   <% end %>
 </ul>
+<%= link_to "make your own cocktail", new_cocktail_path %>
